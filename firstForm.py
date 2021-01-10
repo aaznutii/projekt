@@ -7,17 +7,18 @@
 # Код превращен в код питона следующей инструкцией в GIT Bash  в каталоге проекта
 # pyuic6 firstForm.ui -o firstForm.py
 
-from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtWidgets
 
 
 class Ui_MainWindow(object):
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(391, 255)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.listWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.listWidget.setGeometry(QtCore.QRect(20, 10, 351, 21))
+        self.listWidget.setGeometry(QtCore.QRect(20, 10, 351, 151))
         self.listWidget.setObjectName("listWidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(10, 180, 171, 31))
